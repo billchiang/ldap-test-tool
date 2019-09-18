@@ -2,7 +2,7 @@ package http
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/shanghai-edu/ldap-test-tool/http/controllers"
+	"github.com/billchiang/ldap-test-tool/http/controllers"
 )
 
 func ConfigRouters() {

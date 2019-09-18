@@ -6,8 +6,8 @@ import (
 	"encoding/json"
 
 	"github.com/astaxie/beego"
-	"github.com/shanghai-edu/ldap-test-tool/g"
-	"github.com/shanghai-edu/ldap-test-tool/models"
+	"github.com/billchiang/ldap-test-tool/g"
+	"github.com/billchiang/ldap-test-tool/models"
 )
 
 type AuthSingleController struct {

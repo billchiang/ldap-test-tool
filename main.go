@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/shanghai-edu/ldap-test-tool/cmd"
+	"github.com/billchiang/ldap-test-tool/cmd"
 )
 
 func main() {

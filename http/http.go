@@ -2,7 +2,7 @@ package http
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/shanghai-edu/ldap-test-tool/g"
+	"github.com/billchiang/ldap-test-tool/g"
 )
 
 func Start() {

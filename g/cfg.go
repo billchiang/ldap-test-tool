@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/shanghai-edu/ldap-test-tool/models"
+	"github.com/billchiang/ldap-test-tool/models"
 	"github.com/toolkits/file"
 )
 

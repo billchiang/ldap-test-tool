@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/shanghai-edu/ldap-test-tool/http"
+	"github.com/billchiang/ldap-test-tool/http"
 	"github.com/spf13/cobra"
 )
 

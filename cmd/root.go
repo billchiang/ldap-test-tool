@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/shanghai-edu/ldap-test-tool/g"
+	"github.com/billchiang/ldap-test-tool/g"
 	"github.com/spf13/cobra"
 )
 
