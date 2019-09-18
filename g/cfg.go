@@ -68,6 +68,7 @@ func GetUsers(filePath string) ([]models.User, error) {
 	}
 	return users, nil
 }
+
 func ParseConfig(cfg string) {
 	if cfg == "" {
 		log.Fatalln("use -c to specify configuration file")
@@ -86,6 +87,26 @@ func ParseConfig(cfg string) {
 
 	var c GlobalConfig
 	err = json.Unmarshal([]byte(configContent), &c)
+	if err != nil {
+		log.Fatalln("parse config file:", cfg, "fail:", err)
+	}
+
+	lock.Lock()
+	defer lock.Unlock()
+
+	config = &c
+
+}
+
+func ParseConfigJson(cfg string) {
+	if cfg == "" {
+		log.Fatalln("Please input json string")
+	}
+
+	configContent := cfg
+
+	var c GlobalConfig
+	err := json.Unmarshal([]byte(configContent), &c)
 	if err != nil {
 		log.Fatalln("parse config file:", cfg, "fail:", err)
 	}
